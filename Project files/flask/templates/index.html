@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"></head>
+<body>
+    <section id="hero" class="d-flex-column justify-content-center">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class ="col-xl-8">
+                    <a href ="index1.html">
+                    <h1>Identifying Patterns And Trends In Campus Placement Data Using Machine Learning</h1>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-title">
+                <h2>Fill the details</h2>
+            </div>
+            <div class="row content">
+                <div class="first">
+                    <form action="{{url_for('y_predict')}}" method="POST">
+                        <input type="number" id="sen1" name="sen1" placeholder="Age">
+                        <input type="number" id="sen2" name="sen2" placeholder="Gender M(1),F(0)">
+                        <input type="number" id="sen3" name="sen3" placeholder="Civil(0),CS(1),EEE(2),ECE(3),IT(4),Mech(5)" style="width:300px">
+                        <input type="number" id="sen4" name="sen4" placeholder="Internships">
+                        <input type="number" id="sen5" name="sen5" placeholder="CGPA">
+                        <input type="number" id="sen6" name="sen6" placeholder="Hostel">
+                        <input type="number" id="sen7" name="sen7" placeholder="Number of Backlogs">
+                        <input type="submit" value="Submit">
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
